@@ -12,7 +12,7 @@ org org_tb(.A(A), .B(B),.Y(Y));
   initial begin 
     $dumpfile("dump.vcd");
     $dumpvars(1);
-    $display(A,B,Y);
+    $monitor(A,B,Y);
     A =1'b0;
     B= 1'b0;
     #10
